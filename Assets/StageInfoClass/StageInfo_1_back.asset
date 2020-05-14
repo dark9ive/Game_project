@@ -1,0 +1,41 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 91d0aef59c01d0647986d11dcb69251f, type: 3}
+  m_Name: StageInfo_1_back
+  m_EditorClassIdentifier: 
+  UpdateTime: 1
+  EnemyID: 000000000100000000000000010000000000000001000000020000000a0000000000000000000000
+  pos: 01000000020000000100000002000000020000000100000001000000020000000000000000000000
+  Cnt: 05000000010000000100000001000000010000000100000001000000000000000000000000000000
+  time: 01000000010000000000000000000000000000000000000000000000000000000000000000000000
+  EnemyTime:
+  - 1
+  - 8
+  - 10
+  - 15
+  - 20
+  - 25
+  - 35
+  - 10000
+  - 0
+  - 0
+  EnemyObj:
+  - {fileID: 6318589042503813678, guid: 696b7f731e6eae34691f8340384e0cf2, type: 3}
+  - {fileID: 6318589042503813678, guid: b3848f51b31cd794b8f770e6761cc0ed, type: 3}
+  - {fileID: 7152401086132707538, guid: 168daf8a0e51fcb4fadc09c3168e26f3, type: 3}
+  - {fileID: 7152401086132707538, guid: 168daf8a0e51fcb4fadc09c3168e26f3, type: 3}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
