@@ -40,4 +40,4 @@ Here're the bugs had been known by the developers.
 The auto-aim function will aim on the enemy with the lowest x-value, despite that the target might be behind the Character.
 
 Fixed: 
-<div class="text-green mb-2 ml-4">v1.1</div>
+<div class="text-green mb-2">v1.1</div>
