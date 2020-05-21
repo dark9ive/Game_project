@@ -4,18 +4,30 @@ using UnityEngine;
 
 public class BaseCtrl : MonoBehaviour
 {
-    private bool x = false;
+	private bool x = false;
 
-    // Update is called once per frame
-    void Update()
-    {
-        if(transform.position.x < 0.2f && !x)
-        {
-            Instantiate(gameObject, new Vector3(17.79f, 0, 5), Quaternion.identity, GameObject.FindGameObjectWithTag("Terrain").transform);
-            x = true;
-        }
-
-        if (transform.position.x < -17.79f)
-            Destroy(gameObject);
-    }
+	// Update is called once per frame
+	void FixedUpdate()
+	{
+		/*************************** old stuffs **************************************/
+		/*
+		if(transform.position.x < 0.2f && !x)
+		{
+			Instantiate(gameObject, new Vector3(17.79f, 0, 5), Quaternion.identity, GameObject.FindGameObjectWithTag("Terrain").transform);
+			x = true;
+		}
+		if (transform.position.x < -17.79f){
+			Destroy(gameObject);
+		}
+		*/
+		/*************************** old stuffs **************************************/
+		if(transform.position.x < -10f && !x)
+		{
+			Instantiate(gameObject, new Vector3(15f, 0, 5), Quaternion.identity, GameObject.FindGameObjectWithTag("Terrain").transform);
+			x = true;
+		}
+		if (transform.position.x < -11f){
+			Destroy(gameObject);
+		}
+	}
 }

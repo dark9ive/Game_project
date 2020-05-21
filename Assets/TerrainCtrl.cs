@@ -32,7 +32,7 @@ public class TerrainCtrl : MonoBehaviour
                 else
                     ObjPosY = 0;
 
-                Instantiate(obstacle[/*Random.Range(0, 6)*/5], new Vector3(17.79f, ObjPosY, 0), Quaternion.identity, GameObject.FindGameObjectWithTag("Terrain").transform);
+                Instantiate(obstacle[Random.Range(0, 6)], new Vector3(17.79f, ObjPosY, 0), Quaternion.identity, GameObject.FindGameObjectWithTag("Terrain").transform);
                 // ^^決定生成物件的種類,為陣列中0~5的物件
                 break;
         }
