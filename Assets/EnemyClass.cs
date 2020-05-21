@@ -89,7 +89,7 @@ public class EnemyClass : MonoBehaviour
 	{
 		if (Moving)
 		{
-			Debug.Log("已在移動中");
+			//Debug.Log("已在移動中");
 			yield break;
 		}
 
@@ -101,7 +101,7 @@ public class EnemyClass : MonoBehaviour
 
 			dir = pos - _pos;
 
-			_pos += dir * speed * Time.fixedDeltaTime;
+			_pos += dir * speed * Time.deltaTime;
 			gameObject.transform.position = new Vector3(_pos.x, _pos.y, z);
 
 			yield return 1;

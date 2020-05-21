@@ -23,6 +23,25 @@ git clone git@github.com:dark9ive/Game_project.git
  - Slightly change the Auto-aim algorithm (Bug #1 fixed)
  - Fixed the floating terrains. (Bug #2 fixed)
  - Remake floors and add the grass texture on.
+ - Remove some "terrain" tags to prevent a bug.
+ - Hook running speed to Real-world time.
+
+#### Auto-aim algorithm update
+
+In the last version, auto-aim algorithm wasn't very satisfying.  
+The old algorithm would aim on the target with lowest x-value, despite there may have other target which is nearer to the character.  
+  
+The new algorithm will choose the nearest enemy only from those who are in front of the character.  
+
+#### Floating terrains
+
+Just some simple position adjust.  
+
+#### Remake floors & add grass texture
+
+#### Remove some "terrain" tag
+
+#### running speed
 
 ### v1.0
   

@@ -22,9 +22,13 @@ public class GameCtrl : MonoBehaviour
         Time.timeScale = 1;// 調節FixedUpdate速率
     }
 
-    void FixedUpdate()
+    void Update()
     {
         StartCoroutine(ObstacleCounter(3));
+        if(Input.GetKeyDown(KeyCode.Escape)){
+            Application.Quit();
+        }
+	Debug.Log(Time.time);
     }
 
     private bool ObjMakeCool = false; // 此值為true時,停止生成障礙物
@@ -34,7 +38,6 @@ public class GameCtrl : MonoBehaviour
         if(!ObjMakeCool)
         {
             ObjMakeCool = true;
-
             TerCtrl.makeObstacle(playerStage);
 
             yield return new WaitForSeconds(time);

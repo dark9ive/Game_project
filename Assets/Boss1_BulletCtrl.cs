@@ -66,7 +66,7 @@ public class Boss1_BulletCtrl : MonoBehaviour
 
         for (; !(transform.position.x < -12);)
         {
-            _pos += dir * speed * Time.fixedDeltaTime;
+            _pos += dir * speed * Time.deltaTime;
             gameObject.transform.position = new Vector3(_pos.x, _pos.y, z);
 
             yield return 1;
@@ -82,14 +82,14 @@ public class Boss1_BulletCtrl : MonoBehaviour
         for (; !(transform.position.x < -12);)
         {
             gameObject.transform.rotation = Quaternion.Euler(0f, 0f, T);
-            T += 2f;
+            T += 2f/Time.fixedDeltaTime*Time.deltaTime;
 
             X += Time.deltaTime*3f;
             if (X > (270 * Mathf.Deg2Rad))
             {
                 X = (90 * Mathf.Deg2Rad);
             }
-            transform.position -= new Vector3(speed, -Mathf.Sin(X) / 15, 0.0f);
+            transform.position -= new Vector3(speed/Time.fixedDeltaTime*Time.deltaTime, -Mathf.Sin(X) / 15/Time.fixedDeltaTime*Time.deltaTime, 0.0f);
 
             yield return 1;
         }
