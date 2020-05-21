@@ -234,27 +234,21 @@ public class Raytest : MonoBehaviour
 	{
 		LockCool = true;
 
-		GameObject _target = null;
+		int enemy_index = -1;
+		double min_distance = double.MaxValue;
 		GameObject[] enemys;
 
 		enemys = GameObject.FindGameObjectsWithTag("Enemy");
 
 		for (int i = 0; i < enemys.Length; i++){
-			if (!_target){
-				_target = enemys[i];
-			}
-			else{
-				if(_target.transform.position.x - transform.position.x > enemys[i].transform.position.x - transform.position.x && enemys[i].transform.position.x - transform.position.x >= 0){
-					// 比較目標與玩家的距離,近的為優先
-					_target = enemys[i];
-				}
+			if(min_distance > enemys[i].transform.position.x - transform.position.x && enemys[i].transform.position.x - transform.position.x >= 0){
+				// 比較目標與玩家的距離,近的為優先
+				min_distance = enemys[i].transform.position.x - transform.position.x;
+				enemy_index = i;
 			}
 		}
-		if (_target){
-			if(_target.transform.position.x - transform.position.x < 0){
-				_target = null;
-			}
-			target = _target;
+		if (enemy_index != -1){
+			target = enemys[enemy_index];
 		}
 		else{
 			Debug.Log("No Target!");
