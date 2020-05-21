@@ -4,8 +4,8 @@ A derivative work of Touhou series. The project is under development currently.
 
 ## Screenshots
 
-<img id="ss01" src="https://github.com/dark9ive/Game_project/blob/master/pics/Screenshots1.png" width="720" height="480">
-<img id="ss02" src="https://github.com/dark9ive/Game_project/blob/master/pics/Screenshots2.png" width="720" height="480">  
+<img id="ss01" src="https://github.com/dark9ive/Game_project/blob/master/pics/Screenshots1.png" width="853" height="480">
+<img id="ss02" src="https://github.com/dark9ive/Game_project/blob/master/pics/Screenshots2.png" width="853" height="480">  
 
 ## Building enviornments
 
