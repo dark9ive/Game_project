@@ -18,9 +18,11 @@ git clone git@github.com:dark9ive/Game_project.git
 
 ## ChangeLog
 
-### v1.1
+### v1.1(Uploaded on May 21, 2020)
 
- - Slightly change the Lock-on-enemy algorithm(Bug #1)
+ - Slightly change the Auto-aim algorithm (Bug #1 fixed)
+ - Fixed the floating terrains. (Bug #2 fixed)
+ - Remake floors and add the grass texture on.
 
 ### v1.0
   
@@ -33,11 +35,16 @@ Including all the stuffs been worked before this GitHub repository was made, whi
 
 ## Known Bugs
   
-Here're the bugs had been known by the developers.
+Here're the bugs has been known by the developers.
 
 ### Bug #1
   
 The auto-aim function will aim on the enemy with the lowest x-value, despite that the target might be behind the Character.
 
-Fixed: 
-<div class="text-green mb-2">v1.1</div>
+Fixed on: v1.1  
+
+### Bug #2
+
+Some terrains are floating in the air.
+
+Fixed on: v1.1
