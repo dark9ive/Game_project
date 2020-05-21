@@ -2,6 +2,11 @@
 
 A derivative work of Touhou series. The project is under development currently.
 
+## Screenshots
+
+<img id="ss01" src="https://github.com/dark9ive/Game_project/blob/master/pics/Screenshots1.png" width="640" height="360">  
+<img id="ss02" src="https://github.com/dark9ive/Game_project/blob/master/pics/Screenshots2.png" width="640" height="360">  
+
 ## Building enviornments
 
 This project is written in the following enviornment:
