@@ -1,6 +1,6 @@
 # Game_project
 
-A Touhou derivative work. The project is under development currently.
+A derivative work of Touhou series. The project is under development currently.
 
 ## Building enviornments
 
