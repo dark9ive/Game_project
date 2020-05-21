@@ -667,4 +667,4 @@ ScriptsOnlyBuild:
   platform: 19
   scenePathNames:
   - Assets/Scenes/SampleScene.unity
-  playerPath: "C:/Users/User/Documents/game_project/darkknive's_space/Game_project/Builds/v1.1/\u5E7B\u60F3\u9109\u863F\u5316\u8A08\u756B_\u66F4\u65B0\u7248.exe"
+  playerPath: "/home/darkknive/Desktop/codes/game_project/Game_project/Builds/v1.1/\u5E7B\u60F3\u9109\u863F\u5316\u8A08\u756B_\u66F4\u65B0\u7248.exe"
