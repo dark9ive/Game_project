@@ -145,19 +145,23 @@ public class Raytest : MonoBehaviour
 
             //gameObject.transform.position -= new Vector3(0.2f, 0f, 0);
             GivePlayerDamage(10, 1.5f);// 如果撞到方塊,將受到傷害
+	    //Debug.Log("R Block Hit");
         }
         else if (BackHit.collider && (BackHit.collider.tag == "Obstacle"))// 偵測左方物體
         {
             GivePlayerDamage(10, 1.5f);// 如果撞到方塊,將受到傷害
+	    //Debug.Log("L Block Hit");
         }
 
         if (FrontHit.collider && (FrontHit.collider.tag == "Enemy"))// 偵測右方物體
         {
             GivePlayerDamage(FrontHit.collider.GetComponent<EnemyClass>().TouchDamage, 1.5f);// 如果撞到敵人,將受到傷害
+	    //Debug.Log("R Enemy Hit");
         }
         else if (BackHit.collider && (BackHit.collider.tag == "Enemy"))// 偵測左方物體
         {
             GivePlayerDamage(10, 1.5f);// 如果撞到敵人,將受到傷害
+	    //Debug.Log("L Enemy Hit");
         }
         // =======================Input處理======================= //
         if (Input.GetKeyDown(KeyCode.Z))
@@ -254,7 +258,7 @@ public class Raytest : MonoBehaviour
         if (_target)
             target = _target;
 
-        yield return new WaitForSeconds(1);
+        yield return new WaitForSeconds(0.1f);
 
         LockCool = false;
     }
