@@ -236,7 +236,7 @@ public class Raytest : MonoBehaviour
 		enemys = GameObject.FindGameObjectsWithTag("Enemy");
 
 		for (int i = 0; i < enemys.Length; i++){
-			if(min_distance > Mathf.Pow(Mathf.Pow((enemys[i].transform.position.x - 1.035f - transform.position.x), 2) + Mathf.Pow((enemys[i].transform.position.y + 0.38f - transform.position.y), 2), 0.5f) && enemys[i].transform.position.x - transform.position.x >= 0){
+			if(min_distance > Mathf.Pow(Mathf.Pow((enemys[i].transform.position.x - 1.035f - transform.position.x), 2) + Mathf.Pow((enemys[i].transform.position.y + 0.38f - transform.position.y), 2), 0.5f) && enemys[i].transform.position.x - transform.position.x - 1.035f >= 0){
 				// 比較目標與玩家的距離,近的為優先
 				min_distance = enemys[i].transform.position.x - transform.position.x;
 				enemy_index = i;

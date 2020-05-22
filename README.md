@@ -21,6 +21,12 @@ Please make sure you have [Unity3D](https://unity.com/) installed on your PC, an
 git clone git@github.com:dark9ive/Game_project.git
 ```
 
+## Instructions
+
+ - Use <kbd>↑</kbd> and <kbd>↓</kbd> keys to jump and glide.  
+ - Use <kbd>z<kbd> to switch different lanes.
+
+
 ## ChangeLog
 
 ### v1.1(Uploaded on May 21, 2020)
