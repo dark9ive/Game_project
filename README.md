@@ -25,7 +25,9 @@ git clone git@github.com:dark9ive/Game_project.git
 
  - Use <kbd>↑</kbd> / <kbd>↓</kbd> keys to jump / glide.  
  - Use <kbd>z</kbd> to switch different lanes.
+ - Hold <kbd>c</kbd> to aim the nearest enemy.
 
+glhf!  
 
 ## ChangeLog
 
