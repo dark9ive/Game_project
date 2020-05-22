@@ -24,7 +24,7 @@ git clone git@github.com:dark9ive/Game_project.git
 ## Instructions
 
  - Use <kbd>↑</kbd> and <kbd>↓</kbd> keys to jump and glide.  
- - Use <kbd>z<kbd> to switch different lanes.
+ - Use <kbd>z</kbd> to switch different lanes.
 
 
 ## ChangeLog
