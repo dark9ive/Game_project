@@ -66,7 +66,7 @@ public class shoterCtrl : MonoBehaviour
             else
                 speed -= 0.01f;
 
-            transform.position += new Vector3(0, speed, 0);
+            transform.position += new Vector3(0, speed*Time.deltaTime/Time.fixedDeltaTime, 0);
         }
         else
         {
