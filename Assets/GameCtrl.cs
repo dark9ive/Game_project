@@ -28,7 +28,7 @@ public class GameCtrl : MonoBehaviour
         if(Input.GetKeyDown(KeyCode.Escape)){
             Application.Quit();
         }
-	Debug.Log(Time.time);
+	//Debug.Log(Time.time);
     }
 
     private bool ObjMakeCool = false; // 此值為true時,停止生成障礙物
